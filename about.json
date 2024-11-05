@@ -2,7 +2,7 @@
   "name": "Discourse Subscriptions Extension",
   "component": true,
   "authors": "Angus McLeod",
-  "about_url": "TODO: Put your theme's public repo or Meta topic URL here",
+  "about_url": "https://github.com/angusmcleod/x-discourse-subscriptions",
   "license_url": "TODO: Put your theme's LICENSE URL here",
   "learn_more": "TODO",
   "theme_version": "0.0.1",
