@@ -1,0 +1,31 @@
+{{body-class "user-billing-page"}}
+
+<div class="user-navigation user-navigation-secondary">
+  <HorizontalOverflowNav @ariaLabel="User secondary - notifications">
+    <li>
+      <LinkTo @route="user.billing.subscriptions">
+        {{i18n "discourse_subscriptions.navigation.subscriptions"}}
+      </LinkTo>
+    </li>
+
+    <li>
+      <LinkTo @route="user.billing.payments">
+        {{i18n "discourse_subscriptions.navigation.payments"}}
+      </LinkTo>
+    </li>
+    {{#if this.siteSettings.subscription_server_enabled}}
+      <li>
+        <LinkTo @route="user.billing.authorizations">
+          {{theme-i18n "discourse_subscriptions.navigation.authorizations"}}
+        </LinkTo>
+      </li>
+    {{/if}}
+    {{#if (theme-setting "invoices_link")}}
+      <li><SubscriptionInvoicesBtn /></li>
+    {{/if}}
+  </HorizontalOverflowNav>
+</div>
+
+<section class="user-content">
+  {{outlet}}
+</section>

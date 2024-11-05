@@ -1,0 +1,23 @@
+.subscription-data {
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  td {
+    vertical-align: top;
+  }
+}
+
+.subscription-domain {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+
+  .remove-domain {
+    background-color: unset;
+  }
+}
+
+.discourse-subscriptions-invoices-btn {
+  margin-left: auto;
+}

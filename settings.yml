@@ -1,2 +1,5 @@
-example_setting:
-  default: true
+invoices_link: ""
+pricing_tables:
+  description: "Display multiple pricing tables on the subscriptions page"
+  default: '[ { "title": "", "table_id": "" } ]'
+  json_schema: '{ "type": "array", "format": "table", "uniqueItems": true, "items": { "type": "object", "properties": { "title": { "type": "string", "minLength": 1 }, "table_id": { "type": "string", "minLength": 1 } }, "additionalProperties": false } }'

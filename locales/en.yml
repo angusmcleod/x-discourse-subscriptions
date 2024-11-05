@@ -1,5 +1,25 @@
 en:
-  theme_metadata:
-    description: Adds extra features to Discourse Subscriptions
-    settings:
-      example_setting: A description of a setting.
+  discourse_subscriptions:
+    navigation:
+      authorizations: Authorizations
+    user:
+      authorizations:
+        resource: Resource
+        products: Products
+        domains: Domains
+        domain_limit: Domain Limit
+        remove_domain:
+          title: Remove domain
+      invoices:
+        btn: 
+          label: "Invoices"
+          title: "Your subscription invoices"
+        modal:
+          title: Subscription Invoices
+          description: Sign into our Customer Portal with %{email} to access your invoices.
+          btn: "Customer Portal"
+    admin:
+      products:
+        product:
+          hidden: Hidden
+          hidden_help: "Don't display the product in the subscriptions index."

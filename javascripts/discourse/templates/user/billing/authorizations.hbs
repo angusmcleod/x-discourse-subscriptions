@@ -1,0 +1,21 @@
+<table class="table discourse-subscriptions-user-table">
+  <thead>
+    <th>{{theme-i18n
+        "discourse_subscriptions.user.authorizations.resource"
+      }}</th>
+    <th>{{theme-i18n
+        "discourse_subscriptions.user.authorizations.products"
+      }}</th>
+    <th>{{theme-i18n
+        "discourse_subscriptions.user.authorizations.domains"
+      }}</th>
+    <th>{{theme-i18n
+        "discourse_subscriptions.user.authorizations.domain_limit"
+      }}</th>
+  </thead>
+  <tbody>
+    {{#each model.subscription_domains as |data|}}
+      <SubscriptionData @data={{data}} />
+    {{/each}}
+  </tbody>
+</table>

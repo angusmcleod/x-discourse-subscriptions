@@ -1,0 +1,27 @@
+<DModal
+  @closeModal={{@closeModal}}
+  @title={{theme-i18n "discourse_subscriptions.user.invoices.modal.title"}}
+  class="discourse-subscriptions-user-invoices"
+>
+  <:body>
+    {{theme-i18n
+      "discourse_subscriptions.user.invoices.modal.description"
+      email=this.currentUser.email
+    }}
+  </:body>
+  <:footer>
+    <a
+      href={{theme-setting "invoices_link"}}
+      target="_blank"
+      role="button"
+      class="btn btn-primary"
+      rel="noopener noreferrer"
+    >
+      {{d-icon "external-link-alt"}}
+      <span class="d-button-label">
+        {{theme-i18n "discourse_subscriptions.user.invoices.modal.btn"}}
+      </span>
+    </a>
+    <DModalCancel @close={{@closeModal}} />
+  </:footer>
+</DModal>
