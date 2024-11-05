@@ -4,6 +4,7 @@ en:
       authorizations: Authorizations
     user:
       authorizations:
+        none: You have no active authorizations.
         resource: Resource
         products: Products
         domains: Domains
